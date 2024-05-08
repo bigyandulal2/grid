@@ -1,0 +1,35 @@
+.flex {
+  display: flex;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+}
+.grid_cols_1 {
+  grid-template-columns: 1fr;
+}
+.grid_cols_2 {
+  grid-template-columns: 2fr 1fr;
+}
+.grid_cols_3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.center {
+  text-align: center;
+}
+.align_center {
+  align-items: center;
+}
+.column_gap {
+  column-gap: 3rem;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

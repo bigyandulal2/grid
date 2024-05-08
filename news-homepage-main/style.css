@@ -1,0 +1,262 @@
+/* ### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700, 800 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.container {
+  /* height: 100vh; */
+  padding: 4rem 10rem;
+  /* background: red; */
+}
+
+.navbar {
+  background: white;
+  padding: 2rem;
+}
+.nav_list {
+  flex: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+ul li:hover {
+  color: orangered;
+  cursor: pointer;
+}
+/* main layout starts */
+.parent {
+  /* background-color: red; */
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.img_box {
+  /* background-color: red; */
+  height: 35vh;
+}
+.parent_item2 {
+  background-color: orange;
+}
+/* item1 mid content */
+.item1_midcontent {
+  grid-template-columns: 1.5fr 1.5fr;
+  padding-top: 2rem;
+  gap: 5rem;
+}
+.item1_midcontent h2 {
+  width: 20rem;
+  font-size: 350%;
+  line-height: 1;
+  font-weight: 800;
+}
+.h2_details {
+  background: white;
+}
+.h2_details p {
+  word-spacing: 1.2px;
+  color: hsl(236, 13%, 42%);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.h2_details button {
+  padding: 2% 7%;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  margin-top: 2rem;
+  border: none;
+  letter-spacing: 2px;
+}
+.h2_details button:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+}
+.parent_item1 {
+  /* background-color: red; */
+  padding-right: 3rem;
+}
+
+/* parent content starts right  */
+
+.parent_item2 {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1.2rem 2rem;
+}
+.parent_item2 h2 {
+  font-size: 2.2rem;
+  color: hsl(35, 77%, 62%);
+}
+.item2_content {
+  display: grid;
+  gap: 2rem;
+}
+.content_1 {
+  padding-top: 1.2rem;
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  padding-bottom: 3rem;
+}
+.content_1:last-child {
+  border-bottom: none;
+}
+.content_1 h5 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.content_1 h5:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.content_1 p {
+  color: hsl(233, 8%, 79%);
+}
+/* parent content ends */
+/* img section starts */
+.item_card {
+  padding-top: 8rem;
+  gap: 2rem;
+}
+.card_item1 {
+  padding: 1rem;
+  /* background: red; */
+  gap: 2rem;
+}
+
+.card_img_detail span {
+  color: hsl(233, 8%, 79%);
+  font-weight: 600;
+
+  font-size: 1.8rem;
+}
+.card_img_detail h4 {
+  font-size: 1.3rem;
+}
+.card_img_detail h4:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+.card_img_detail p {
+  color: hsl(233, 8%, 79%);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card_img {
+  height: 10rem;
+  width: 10rem;
+}
+@media screen and (max-width: 63.25em) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    /* height: 100vh; */
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 43.875em) {
+  .container {
+    position: relative;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+  .navbar ul li {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .menu_close {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+  }
+  .nav_list {
+    background-color: white;
+    top: 0;
+    left: 30vw;
+    bottom: 0;
+    right: 0;
+    max-height: 200vh;
+    position: absolute;
+    padding-top: 20vh;
+    z-index: 1;
+    display: none;
+  }
+
+  .menu {
+    display: inline-block !important;
+    flex: 1;
+    text-align: end;
+    align-self: center;
+  }
+  #parent {
+    grid-template-columns: 1fr;
+
+    /* background-color: red; */
+    padding-top: 2vh;
+    padding-left: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 4vh;
+  }
+  .parent_item1 {
+    padding-right: 0;
+  }
+  .item_card {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 29.375em) {
+  .img_box {
+    height: 20vh;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+  .item1_midcontent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+  .item1_midcontent h2 {
+    width: 81%;
+    margin-bottom: 5%;
+  }
+}
